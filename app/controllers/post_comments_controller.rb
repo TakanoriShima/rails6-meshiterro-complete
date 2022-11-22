@@ -7,7 +7,6 @@ class PostCommentsController < ApplicationController
     if @post_comment.save
       redirect_to post_image_path(@post_image)
     else
-      #@post_comment = PostComment.new
       render template: "post_images/show"
     end  
   end
