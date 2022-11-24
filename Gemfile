@@ -64,3 +64,7 @@ gem 'devise'
 gem 'kaminari','~> 1.2.1'
 
 gem 'activestorage-validator'
+
+group :development, :production do
+  gem 'puma-daemon', require: false
+end
